@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Finder Engine</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1b1b1f; /* Dark background */
+            color: #fff; /* White text color for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #1b1b1f; /* Same dark background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 480px; /* Make the container a bit narrower on large screens */
+            box-sizing: border-box; /* Ensures padding is included in width */
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 15px;
+            font-family: sans-serif;
+        }
+
+        .gcse-search {
+            width: 100%;
+            padding: 10%; /* Provides padding inside the search box */
+            margin-top: 10%; /* Shifts the search box down 10% */
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            color: #bbb;
+            font-size: 12px;
+        }
+
+        /* Ensure search results also have the same background */
+        .gsc-control-cse {
+            background-color: #1b1b1f !important; /* Override background for search results */
+            color: rgb(40, 34, 34) !important; /* Override text color to be white in results */
+        }
+
+        /* Media Queries for Mobile Devices */
+        @media (max-width: 600px) {
+            .title {
+                font-size: 20px; /* Smaller font size on smaller screens */
+                margin-bottom: 10px;
+            }
+
+            .gcse-search {
+                padding: 8%; /* Slightly reduce padding on mobile */
+                margin-top: 5%; /* Reduce space above the search box */
+            }
+
+            footer {
+                font-size: 12px; /* Smaller footer text for mobile */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 15px; /* Reduced padding on very small screens */
+            }
+
+            .gcse-search {
+                padding: 6%; /* Further reduce padding on extra-small screens */
+            }
+
+            .title {
+                font-size: 18px; /* Smaller font on extra-small screens */
+                margin-bottom: 8px;
+            }
+
+            footer {
+                font-size: 10px; /* Even smaller footer text */
+            }
+        }
+
+    </style>
+    <script async src="https://cse.google.com/cse.js?cx=c56a3ff5efed348f0"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">Course Finder Engine</div>
+        
+        <!-- Google Custom Search Engine -->
+        <div class="gcse-search"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 - Made by Dark x Infinity </p>
+    </footer>
+
+</body>
+</html>
